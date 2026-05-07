@@ -1,3 +1,5 @@
+#if !UNITY_ANDROID
+
 using System;
 using ProBridge.Tx;
 using sensor_msgs.msg;
@@ -148,3 +150,5 @@ public class DepthPointCloudTx : ProBridgeTxStamped<PointCloud2>
         return base.GetMsg(ts);               
     }
 }
+
+#endif

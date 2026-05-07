@@ -1,4 +1,6 @@
-﻿using System;
+﻿#if !UNITY_ANDROID
+
+using System;
 using System.Threading;
 using sensor_msgs.msg;
 using TurboJpegWrapper;
@@ -280,3 +282,5 @@ namespace ProBridge.Tx.Sensor
         }
     }
 }
+
+#endif

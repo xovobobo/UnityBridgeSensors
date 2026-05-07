@@ -1,4 +1,6 @@
-﻿using System;
+﻿#if !UNITY_ANDROID
+
+using System;
 using ProBridge.Tx;
 using sensor_msgs.msg;
 using TurboJpegWrapper;
@@ -112,3 +114,5 @@ public class DepthCameraTx : ProBridgeTxStamped<CompressedImage>
     }
 
 }
+
+#endif
