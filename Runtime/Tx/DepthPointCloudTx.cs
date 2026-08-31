@@ -1,4 +1,4 @@
-#if !UNITY_ANDROID
+#if !(UNITY_ANDROID || UNITY_STANDALONE_OSX)
 
 using System;
 using ProBridge.Tx;
